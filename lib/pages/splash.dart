@@ -1,5 +1,6 @@
 import 'package:edulab/Theme.dart';
 import 'package:edulab/info.dart';
+import 'package:edulab/login/Test.dart';
 import 'package:edulab/login/login.dart';
 import 'package:edulab/login/signUp.dart';
 import 'package:edulab/pages/Homepage.dart';
@@ -18,7 +19,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     Future.delayed(Duration(seconds: 3), () {
       Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (_) => LoginScreen()));
+          .pushReplacement(MaterialPageRoute(builder: (_) => Test()));
     });
     // TODO: implement initState
     super.initState();
