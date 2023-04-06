@@ -75,8 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
       borderRadius: BorderRadius.circular(18),
       color: squColor3,
       child: MaterialButton(
-        height: 60,
-        minWidth: 1000,
+        minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
         onPressed: () {
           Navigator.pushReplacement(
@@ -132,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 Center(
                   child: SizedBox(
-                    height: 200,
+                    height: MediaQuery.of(context).size.height * 0.15,
                     child: Image.asset(
                       logo,
                       fit: BoxFit.contain,
@@ -145,8 +144,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       'Login to your account',
                       style: GoogleFonts.poppins(
                           color: butColor2,
-                          fontSize: 40,
-                          fontWeight: FontWeight.bold),
+                          fontSize: 30,
+                          fontWeight: FontWeight.w600),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     )),
@@ -209,11 +208,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: MediaQuery.of(context).size.height * 0.02,
                 ),
                 Center(child: LoginButton),
                 SizedBox(
-                  height: 40,
+                  height: MediaQuery.of(context).size.height * 0.04,
                 ),
                 Center(
                   child: Column(
@@ -237,8 +236,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               child: Image.asset(
                                 "assets/image/google.png",
                               ),
-                              width: 80,
-                              height: 60,
+                              width: MediaQuery.of(context).size.height * 0.1,
+                              height: MediaQuery.of(context).size.height * 0.07,
                               decoration: BoxDecoration(
                                   color: white,
                                   borderRadius: BorderRadius.circular(25)),

@@ -43,6 +43,8 @@ class _PasswordResetState extends State<PasswordReset> {
 
   @override
   Widget build(BuildContext context) {
+    SingUp() async {}
+
     return Scaffold(
         backgroundColor: primColor,
         body: Padding(
