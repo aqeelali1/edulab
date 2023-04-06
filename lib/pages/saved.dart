@@ -107,7 +107,7 @@ class _SavedPageState extends State<SavedPage> {
           tileColor: Colors.white,
           title: Text(subName,
               style: GoogleFonts.poppins(
-                  fontSize: 23, fontWeight: FontWeight.w500)),
+                  fontSize: 18, fontWeight: FontWeight.w500)),
           subtitle: Text("Dr.Name"),
           leading: CircleAvatar(
             maxRadius: 35,

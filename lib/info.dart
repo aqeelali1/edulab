@@ -10,19 +10,19 @@ List subject = [
     "data": "Hi this is oop ",
     "catgre": [
       {
-        'title': 'ملازم',
+        'title': "Chapters",
         'image': 'assets/image/study.png',
       },
       {
-        'title': 'امتحانات',
+        'title': "Exams",
         'image': 'assets/image/exam.png',
       },
       {
-        'title': 'مواعيد مهمة ',
+        'title': "Important dates",
         'image': 'assets/image/knowledge.png',
       },
       {
-        'title': 'نتائج',
+        'title': "Exam Results",
         'image': 'assets/image/open-book.png',
       },
     ]
@@ -34,19 +34,19 @@ List subject = [
     "data": "Hi this is data Structure ",
     "catgre": [
       {
-        'title': 'ملازم',
+        'title': "Chapters",
         'image': 'assets/image/study.png',
       },
       {
-        'title': 'امتحانات',
+        'title': "Exams",
         'image': 'assets/image/exam.png',
       },
       {
-        'title': 'مواعيد مهمة ',
+        'title': "Important dates",
         'image': 'assets/image/knowledge.png',
       },
       {
-        'title': 'نتائج',
+        'title': "Exam Results",
         'image': 'assets/image/open-book.png',
       },
     ]
@@ -58,19 +58,19 @@ List subject = [
     "data": "Hi this is Data Base ",
     "catgre": [
       {
-        'title': 'ملازم',
+        'title': "Chapters",
         'image': 'assets/image/study.png',
       },
       {
-        'title': 'امتحانات',
+        'title': "Exams",
         'image': 'assets/image/exam.png',
       },
       {
-        'title': 'مواعيد مهما ',
+        'title': "Important dates",
         'image': 'assets/image/knowledge.png',
       },
       {
-        'title': 'نتائج',
+        'title': "Exam Results",
         'image': 'assets/image/open-book.png',
       },
     ]
@@ -82,19 +82,19 @@ List subject = [
     "data": "Hi this is cT ",
     "catgre": [
       {
-        'title': 'ملازم',
+        'title': "Chapters",
         'image': 'assets/image/study.png',
       },
       {
-        'title': 'امتحانات',
+        'title': "Exams",
         'image': 'assets/image/exam.png',
       },
       {
-        'title': 'مواعيد مهمة ',
+        'title': "Important dates",
         'image': 'assets/image/knowledge.png',
       },
       {
-        'title': 'نتائج',
+        'title': "Exam Results",
         'image': 'assets/image/open-book.png',
       },
     ]
@@ -106,19 +106,19 @@ List subject = [
     "data": "Hi this is English ",
     "catgre": [
       {
-        'title': 'ملازم',
+        'title': "Chapters",
         'image': 'assets/image/study.png',
       },
       {
-        'title': 'امتحانات',
+        'title': "Exams",
         'image': 'assets/image/exam.png',
       },
       {
-        'title': 'مواعيد مهمة ',
+        'title': "Important dates",
         'image': 'assets/image/knowledge.png',
       },
       {
-        'title': 'نتائج',
+        'title': "Exam Results",
         'image': 'assets/image/open-book.png',
       },
     ]
@@ -130,19 +130,19 @@ List subject = [
     "data": "Hi this is Micro ",
     "catgre": [
       {
-        'title': 'ملازم',
+        'title': "Chapters",
         'image': 'assets/image/study.png',
       },
       {
-        'title': 'امتحانات',
+        'title': "Exams",
         'image': 'assets/image/exam.png',
       },
       {
-        'title': 'مواعيد مهمة ',
+        'title': "Important dates",
         'image': 'assets/image/knowledge.png',
       },
       {
-        'title': 'نتائج',
+        'title': "Exam Results",
         'image': 'assets/image/open-book.png',
       },
     ]

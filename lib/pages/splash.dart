@@ -19,7 +19,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     Future.delayed(Duration(seconds: 3), () {
       Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (_) => Test()));
+          .pushReplacement(MaterialPageRoute(builder: (_) => LoginScreen()));
     });
     // TODO: implement initState
     super.initState();

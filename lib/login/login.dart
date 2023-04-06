@@ -125,135 +125,137 @@ class _LoginScreenState extends State<LoginScreen> {
       backgroundColor: primColor,
       body: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Center(
-                child: SizedBox(
-                  height: 200,
-                  child: Image.asset(
-                    logo,
-                    fit: BoxFit.contain,
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Center(
+                  child: SizedBox(
+                    height: 200,
+                    child: Image.asset(
+                      logo,
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 ),
-              ),
-              SizedBox(
-                  width: 300,
-                  child: Text(
-                    'Login to your account',
-                    style: GoogleFonts.poppins(
-                        color: butColor2,
-                        fontSize: 40,
-                        fontWeight: FontWeight.bold),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  )),
-              Padding(
-                padding: EdgeInsets.only(top: 20),
-                child: Row(
-                  children: [
-                    Container(
-                      height: 5.0,
-                      width: 180.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: squColor3,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Container(
-                      width: 10,
-                      height: 5,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: squColor3,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              emailField,
-              SizedBox(
-                height: 20,
-              ),
-              PasswordField,
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
+                SizedBox(
+                    width: 300,
+                    child: Text(
+                      'Login to your account',
+                      style: GoogleFonts.poppins(
+                          color: butColor2,
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    )),
+                Padding(
+                  padding: EdgeInsets.only(top: 20),
+                  child: Row(
                     children: [
-                      Icon(
-                        Icons.check_box,
-                        color: squColor3,
+                      Container(
+                        height: 5.0,
+                        width: 180.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: squColor3,
+                        ),
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
-                      Text(
-                        'Remember me',
-                        style: TextStyle(fontSize: 16),
+                      Container(
+                        width: 10,
+                        height: 5,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: squColor3,
+                        ),
                       ),
                     ],
                   ),
-                  ForgotPassword,
-                ],
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Center(child: LoginButton),
-              SizedBox(
-                height: 40,
-              ),
-              Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                emailField,
+                SizedBox(
+                  height: 20,
+                ),
+                PasswordField,
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      "Or login with ",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w400, fontSize: 20),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        InkWell(
-                          child: Container(
-                            padding: EdgeInsets.all(10),
-                            child: Image.asset(
-                              "assets/image/google.png",
-                            ),
-                            width: 80,
-                            height: 60,
-                            decoration: BoxDecoration(
-                                color: white,
-                                borderRadius: BorderRadius.circular(25)),
-                          ),
-                          onTap: () => null,
+                        Icon(
+                          Icons.check_box,
+                          color: squColor3,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Remember me',
+                          style: TextStyle(fontSize: 16),
                         ),
                       ],
-                    )
+                    ),
+                    ForgotPassword,
                   ],
                 ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Center(child: RegisterText)
-            ],
+                SizedBox(
+                  height: 20,
+                ),
+                Center(child: LoginButton),
+                SizedBox(
+                  height: 40,
+                ),
+                Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Or login with ",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w400, fontSize: 20),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          InkWell(
+                            child: Container(
+                              padding: EdgeInsets.all(10),
+                              child: Image.asset(
+                                "assets/image/google.png",
+                              ),
+                              width: 80,
+                              height: 60,
+                              decoration: BoxDecoration(
+                                  color: white,
+                                  borderRadius: BorderRadius.circular(25)),
+                            ),
+                            onTap: () => null,
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Center(child: RegisterText)
+              ],
+            ),
           )),
     );
   }
