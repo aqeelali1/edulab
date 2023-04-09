@@ -4,8 +4,7 @@ import 'package:edulab/Theme.dart';
 import 'package:edulab/info.dart';
 import 'package:edulab/tapbar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class Register extends StatefulWidget {
@@ -104,9 +103,12 @@ class _RegisterState extends State<Register> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.05,
+                ),
                 Center(
                   child: SizedBox(
-                    height: 200,
+                    height: MediaQuery.of(context).size.height * 0.15,
                     child: Image.asset(
                       logo,
                       fit: BoxFit.contain,
@@ -114,16 +116,15 @@ class _RegisterState extends State<Register> {
                   ),
                 ),
                 SizedBox(
-                    width: 300,
                     child: Text(
-                      'Create                an account',
-                      style: GoogleFonts.poppins(
-                          color: butColor2,
-                          fontSize: 40,
-                          fontWeight: FontWeight.bold),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                    )),
+                  'Create an account',
+                  style: GoogleFonts.poppins(
+                      color: butColor2,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                )),
                 Padding(
                   padding: const EdgeInsets.only(top: 10),
                   child: Row(
@@ -150,19 +151,19 @@ class _RegisterState extends State<Register> {
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.025,
                 ),
                 emailField,
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.025,
                 ),
                 PasswordField,
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.025,
                 ),
                 confirmPasswordField,
-                const SizedBox(
+                SizedBox(
                   height: 30,
                 ),
                 Material(
@@ -170,9 +171,8 @@ class _RegisterState extends State<Register> {
                   borderRadius: BorderRadius.circular(18),
                   color: squColor3,
                   child: MaterialButton(
-                    height: 60,
-                    minWidth: 1000,
-                    padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                    minWidth: MediaQuery.of(context).size.width,
+                    padding: EdgeInsets.all(15),
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => MyNevBar()));
@@ -188,7 +188,7 @@ class _RegisterState extends State<Register> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: MediaQuery.of(context).size.height * 0.025,
                 ),
                 Center(
                   child: Column(
@@ -201,7 +201,7 @@ class _RegisterState extends State<Register> {
                             fontWeight: FontWeight.w400, fontSize: 20),
                       ),
                       SizedBox(
-                        height: 20,
+                        height: MediaQuery.of(context).size.height * 0.025,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -212,12 +212,13 @@ class _RegisterState extends State<Register> {
                               child: Image.asset(
                                 "assets/image/google.png",
                               ),
-                              width: 80,
-                              height: 60,
+                              width: MediaQuery.of(context).size.height * 0.09,
+                              height: MediaQuery.of(context).size.height * 0.08,
                               decoration: BoxDecoration(
-                                  color: white,
+                                  color: Colors.white30,
                                   borderRadius: BorderRadius.circular(25)),
                             ),
+                            borderRadius: BorderRadius.circular(25),
                             onTap: () => null,
                           ),
                         ],
@@ -226,7 +227,7 @@ class _RegisterState extends State<Register> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: MediaQuery.of(context).size.height * 0.025,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

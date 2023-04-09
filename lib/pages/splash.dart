@@ -1,10 +1,7 @@
 import 'package:edulab/Theme.dart';
 import 'package:edulab/info.dart';
-import 'package:edulab/login/Test.dart';
 import 'package:edulab/login/login.dart';
-import 'package:edulab/login/signUp.dart';
-import 'package:edulab/pages/Homepage.dart';
-import 'package:edulab/tapbar.dart';
+
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {
