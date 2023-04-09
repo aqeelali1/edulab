@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:edulab/Theme.dart';
 import 'package:edulab/info.dart';
+import 'package:edulab/login/login.dart';
 import 'package:edulab/tapbar.dart';
 import 'package:flutter/material.dart';
 
@@ -238,7 +239,7 @@ class _RegisterState extends State<Register> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Register()));
+                                builder: (context) => LoginScreen()));
                       },
                       child: Text(
                         " Login",
