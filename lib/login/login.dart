@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
       color: squColor3,
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+        padding: EdgeInsets.all(15),
         onPressed: () {
           Navigator.pushReplacement(
               context, MaterialPageRoute(builder: (context) => MyNevBar()));
@@ -129,6 +129,9 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.05,
+                ),
                 Center(
                   child: SizedBox(
                     height: MediaQuery.of(context).size.height * 0.15,
@@ -139,16 +142,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 SizedBox(
-                    width: 300,
                     child: Text(
-                      'Login to your account',
-                      style: GoogleFonts.poppins(
-                          color: butColor2,
-                          fontSize: 30,
-                          fontWeight: FontWeight.w600),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                    )),
+                  'Login to your account',
+                  style: GoogleFonts.poppins(
+                      color: butColor2,
+                      fontSize: 25,
+                      fontWeight: FontWeight.w600),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                )),
                 Padding(
                   padding: EdgeInsets.only(top: 20),
                   child: Row(
@@ -176,15 +178,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: MediaQuery.of(context).size.height * 0.025,
                 ),
                 emailField,
                 SizedBox(
-                  height: 20,
+                  height: MediaQuery.of(context).size.height * 0.025,
                 ),
                 PasswordField,
                 SizedBox(
-                  height: 20,
+                  height: MediaQuery.of(context).size.height * 0.025,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -231,15 +233,16 @@ class _LoginScreenState extends State<LoginScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           InkWell(
+                            borderRadius: BorderRadius.circular(25),
                             child: Container(
                               padding: EdgeInsets.all(10),
                               child: Image.asset(
                                 "assets/image/google.png",
                               ),
-                              width: MediaQuery.of(context).size.height * 0.1,
-                              height: MediaQuery.of(context).size.height * 0.07,
+                              width: MediaQuery.of(context).size.height * 0.09,
+                              height: MediaQuery.of(context).size.height * 0.08,
                               decoration: BoxDecoration(
-                                  color: white,
+                                  color: Colors.white30,
                                   borderRadius: BorderRadius.circular(25)),
                             ),
                             onTap: () => null,
