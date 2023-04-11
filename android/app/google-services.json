@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "400602223621",
+    "project_id": "edulab-52cec",
+    "storage_bucket": "edulab-52cec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400602223621:android:4a80272472e5ddab94f86c",
+        "android_client_info": {
+          "package_name": "com.example.edulab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400602223621-c5ko6tebh2c6s4tdhkaoor879k4mtonh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASSNn1cQPNBhSD2a7SvT5kz0qjUajZ63E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400602223621-c5ko6tebh2c6s4tdhkaoor879k4mtonh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
